@@ -1,14 +1,12 @@
 const http = require('http');
 const fs = require('fs');
 
-// HTTP => (request, response)
 
 http.createServer((request, response)=>{
 
   const file = request.url == '/' ?
   './www/index.html' : `./www${request.url}`;
 
-  // const data = fs.readFileSync('./www/index.html');
   fs.readFile(file, (err, data) =>{
     if(err){
       response.writeHead(404, {"Content-Type":"text/plain"});
