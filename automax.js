@@ -5,7 +5,7 @@ const fs = require('fs');
 http.createServer((request, response)=>{
 
   const file = request.url == '/' ?
-  './www/index.html' : `./www${request.url}`;
+  './www/landingpage.html' : `./www${request.url}`;
 
   fs.readFile(file, (err, data) =>{
     if(err){
@@ -37,6 +37,9 @@ http.createServer((request, response)=>{
         case 'png':
           response.writeHead(200, {"Content-Type":"image/png"});
           break;
+        case 'svg':
+          response.writeHead(200, {"Content-Type":"image/svg"});
+          break;  
       default:
         response.writeHead(200, {"Content-Type":"text/html"});
       }
