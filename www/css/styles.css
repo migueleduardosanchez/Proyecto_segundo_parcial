@@ -20,6 +20,8 @@ button {
   padding: 0;
   background: transparent;
   cursor: pointer;
+  aspect-ratio: 1/5;
+
 }
 
 .burger,
@@ -33,16 +35,18 @@ button {
   top: 10;
   left: 10;
   place-items: center;
-  height: 100px;
-  width: 100px;
-  max-width: 100%;
-  max-height: 100%;
-  background-image: url("/img/menu.svg");
+  aspect-ratio: 1/5;
+  object-fit: contain;
+  height: 10%;
+  width: 10%;
+  background-image: url("/img/menu.png");
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 body.open .burger {
-  background-image: url("/img/close.svg");
+  background-image: url("/img/cerrar.png");
+
 }
 
 .background {
@@ -152,7 +156,7 @@ body {
   padding: 0;
 }
 .header {
-  background-color: #333;
+  background-color: #615b5b;
   color: #fff;
   padding: 20px;
   text-align: center;
