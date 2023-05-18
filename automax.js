@@ -4,6 +4,27 @@ const fs = require('fs');
 
 http.createServer((request, response)=>{
 
+  if (request.url == '/guardar' && request.method == 'POST') {
+    let datos = '';
+
+    request.on('data', chunk => {
+      datos += chunk;
+    });
+
+    request.on('end', () => {
+      fs.appendFile('datos.txt', datos, err => {
+        if (err) {
+          console.error(err);
+          response.statusCode = 500;
+          response.end('Error al guardar los datos');
+        } else {
+          console.log('Datos guardados correctamente');
+          response.end('Datos guardados correctamente');
+        }
+      });
+    });
+  }
+
   const file = request.url == '/' ?
   './www/landingpage.html' : `./www${request.url}`;
 
