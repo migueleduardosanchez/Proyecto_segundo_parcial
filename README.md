@@ -7,13 +7,16 @@
 - *Sebastian Meza Andrade (339079)*
 
 ## Links de los repositorios
-Github:
+Github: https://github.com/migueleduardosanchez/Proyecto_segundo_parcial
 
 Dockerhub:
 
 ## Pre-requisitos
 
-Descargar el archivo <sub>index.html</sub> y la carpeta <sub>www</sub> con todo su contenido
+Clonar el repositorio desde una terminal con:
+```
+git clone https://github.com/migueleduardosanchez/Proyecto_segundo_parcial
+```
 
 ## Correr archivo
 
@@ -23,13 +26,15 @@ node automax.js
 ```
 Abrimos en un navegador http://localhost:8888/ para ver el Landing page de la empresa.
 
-Tambien se puede abrir la pagina http://localhost:8888/contactos para ver los datos para ubicar a la empresa.
+También se puede abrir la pagina http://localhost:8888/contactos para ver los datos para ubicar a la empresa.
 
 Se puede encontrar los datos de la empresa:
 
 + Misión
 + Visión
 
-En la siguiente pagina: http://localhost:8888/acerca
+En la siguiente pagina: http://localhost:8888/acercade.html
 
-En la pagina principal, o Landing page, podemos encontrar los links directos que nos llevaran a los contactos o informacion de la empresa, asi como algunos de los vehiculos mas vendidos, los cuales nos direccionaran a los detalles o especificaciones de cada uno de estos.
+En la pagina principal, o Landing page, podemos encontrar los links directos que nos llevaran a los contactos o información de la empresa, así como algunos de los vehículos mas vendidos, los cuales nos direccionan a los detalles o especificaciones de cada uno de estos.
+
+En el apartado http://localhost:8888/formulario.html podemos encontrar un formulario en el cual podemos enviar mensajes a la empresa, se guarda en un archivo de texto, y la empresa se puede comunicar con el usuario en cuanto tenga oportunidad.

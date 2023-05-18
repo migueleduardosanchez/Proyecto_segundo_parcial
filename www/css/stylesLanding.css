@@ -13,6 +13,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0% 0%;
+  background-image: url("/img/fondoAcerca.jpg");
+  background-size: 3000px 3500px;
 }
 
 button {
@@ -21,7 +23,6 @@ button {
   background: transparent;
   cursor: pointer;
   aspect-ratio: 1/5;
-
 }
 
 .burger,
@@ -46,7 +47,6 @@ button {
 
 body.open .burger {
   background-image: url("/img/cerrar.png");
-
 }
 
 .background {
