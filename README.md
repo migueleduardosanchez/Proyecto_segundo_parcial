@@ -6,11 +6,6 @@
 - *Jose Ricardo Avila Chávez (345635)*
 - *Sebastian Meza Andrade (339079)*
 
-## Links de los repositorios
-Github: https://github.com/migueleduardosanchez/Proyecto_segundo_parcial
-
-Dockerhub:
-
 ## Pre-requisitos
 
 Clonar el repositorio desde una terminal con:
