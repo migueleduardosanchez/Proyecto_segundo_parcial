@@ -60,7 +60,7 @@ http.createServer((request, response)=>{
           break;
         case 'svg':
           response.writeHead(200, {"Content-Type":"image/svg"});
-          break;  
+          break;
       default:
         response.writeHead(200, {"Content-Type":"text/html"});
       }
