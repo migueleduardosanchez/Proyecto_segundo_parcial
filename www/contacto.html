@@ -1,43 +1,52 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>Contacto - AUTOMAX</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        h1 {
-            color: #333;
-            text-align: center;
-        }
-        h2 {
-            color: #555;
-            margin-top: 20px;
-        }
-        p {
-            margin-bottom: 10px;
-        }
-        ul {
-            margin-left: 30px;
-            margin-bottom: 10px;
-        }
-    </style>
-</head>
-<body>
-    <h1>Contacto</h1>
+  <head>
+      <meta charset="UTF-8">
+      <title>Contacto - AUTOMAX</title>
+      <link rel='stylesheet' href="./css/stylesContacto.css">
+  </head>
+  <body>
+    <button
+    class="burger"
+    onclick="toggleMenu()"></button>
+    <div class="background"></div>
+    <div class="menu">
+      <nav>
+        <a style="animation-delay: 0.2s" href="./landingpage.html">Pagina principal</a>
+        <a style="animation-delay: 0.2s" href="./acercade.html">Acerca de</a>
+        <a style="animation-delay: 0.3s">Contactos</a>
+        <a style="animation-delay: 0.4s">Vehiculos</a>
+        <a style="animation-delay: 0.5s" href="formulario.html">Formulario</a>
+      </nav>
+    </div>
+    <script type="text/javascript">
+      const toggleMenu = () =>
+      document.body.classList.toggle("open")
+    </script>
+    <div class="header">
+        <h1>AUTOMAX</h1>
+        <p>Su destino para encontrar el vehiculo ideal</p>
+    </div>
+    <div class="titulo">
+      <center>
+        <h1>Contacto</h1>
+      </center>
+    </div>
+    <div class="contacto">
+      <center>
+        <h2>Nuestra Informacion</h2>
+        <p>Ponte en contacto con nosotros a través de los siguientes medios:</p>
+      </center>
+        <ul>
+            <li>Teléfono: 614-285-30-37</li>
+            <li>Email: info@automax.com</li>
+            <li>Dirección: Av 20 de Noviembre Col. centro, Chihuahua Chih., México</li>
+        </ul>
 
-    <h2>Nuestra Informacion</h2>
-    <p>Ponte en contacto con nosotros a través de los siguientes medios:</p>
-    <ul>
-        <li>Teléfono: 614-285-30-37</li>
-        <li>Email: info@automax.com</li>
-        <li>Dirección: Av 20 de Noviembre Col. centro, Chihuahua Chih., México</li>
-    </ul>
-
-
-    <h2>¡Esperamos saber de ti pronto!</h2>
-    <p>Si tienes alguna pregunta, comentario o solicitud, no dudes en ponerte en contacto con nosotros. Nuestro equipo estará encantado de ayudarte y responder a tus consultas.</p>
-</body>
+      <center>
+        <h2>¡Esperamos saber de ti pronto!</h2>
+        <p>Si tienes alguna pregunta, comentario o solicitud, no dudes en ponerte en contacto con nosotros. Nuestro equipo estará encantado de ayudarte y responder a tus consultas.</p>
+      </center>
+    </div>
+  </body>
 </html>
